@@ -1,0 +1,28 @@
+config {
+  type: "view",
+  description:"description of view",
+  assertions:{
+    uniqueKey:["count"],
+    nonNull:["fruit"]
+  }
+}
+
+SELECT
+  "apples" AS fruit,
+  2 AS count
+UNION ALL
+SELECT
+  "oranges" AS fruit,
+  5 AS count
+UNION ALL
+SELECT
+  "pears" AS fruit,
+  2 AS count
+UNION ALL
+SELECT
+  "bananas" AS fruit,
+  2 AS count
+UNION ALL
+SELECT
+  "mangoes" AS fruit,
+  3 AS count
